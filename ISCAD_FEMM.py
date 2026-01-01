@@ -3,13 +3,10 @@ import numpy as np
 from functions import *
 from plots import *
 
-
-# parameters [SI units]
-# ----------------------USER INPUT-----------------------
 # Runtime Controls , Boolean
-CreateModel = 1
-Solve = 1
-Analyze = 1
+CreateModel = 0
+Solve = 0
+Analyze = 0
 CycleRender = 0
 
 # FILES
@@ -17,6 +14,9 @@ filename = "ISCAD_FEMM.FEM"
 directory = "C:\\users\\chxps15\\My Documents\\UoBMechElec\\GIP\\FEMM\\"
 path = directory + filename
 bpr = 25 # bitmaps per rotation, if CycleRender == True
+
+# parameters [SI units]
+# ----------------------USER INPUT-----------------------
 
 # FEMM_createmodel() MACHINE CONFIG
 Qs = 60 # number of stator bars
